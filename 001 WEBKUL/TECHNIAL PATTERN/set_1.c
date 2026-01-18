@@ -37,9 +37,8 @@ e        e
 */
 #include<stdio.h>
 void pattern(int n) {
-
+    // uppar part
     int x = (n-3)/2;
-
     for(int i=0; i<x; i++){
         for(int j=0; j<=n+i-x; j++) {
             printf(" ");
