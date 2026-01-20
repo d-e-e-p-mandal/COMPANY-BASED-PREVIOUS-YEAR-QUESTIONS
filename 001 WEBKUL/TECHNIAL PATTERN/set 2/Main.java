@@ -30,8 +30,7 @@ class Pattern {
     public void pattern(int n) {
         int i,j;
         for(i=0;i<(n/2)+1;i++){
-            // add part
-            for(j=0; j<n/2+1; j++) { // 
+            for(j=0; j<n/2+1; j++) { 
                 System.out.print(" ");
             }
             for( j=0;j<(n/2)-i;j++){
@@ -44,7 +43,6 @@ class Pattern {
         }
 
         for( i=0;i<n;i++){
-            // add part
             for(j=0; j<n/2; j++) {
                 System.out.print(" ");
             }
@@ -56,11 +54,9 @@ class Pattern {
         }
 
         for(i=0;i<n;i++){
-            // add part
             for(j=0; j<n/2; j++) {
                 System.out.print(" ");
             }
-          
             for(j=0;j<n+2;j++){
                 if(i==0||j==0||j==n+1){
                     System.out.print("*");
@@ -90,7 +86,7 @@ class Main{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter N : ");
+        System.out.print("Enter N : ");
 
         int n = sc.nextInt();
 
