@@ -25,10 +25,9 @@ N = 7
   ***     ***  
    *       *   
 */
-
-class Main{
-    public static void main(String[] args){
-        int n=7;
+import java.util.*;
+class Pattern {
+    public void pattern(int n) {
         int i,j;
         for(i=0;i<(n/2)+1;i++){
             // add part
@@ -49,20 +48,19 @@ class Main{
             for(j=0; j<n/2; j++) {
                 System.out.print(" ");
             }
-            for( j=0;j<n/2+1;j++){ // plus one change
+            for( j=0;j<n/2+1;j++){ // plus one 
                 System.out.print(" ");
             }
             
             System.out.println("@");
         }
+
         for(i=0;i<n;i++){
             // add part
             for(j=0; j<n/2; j++) {
                 System.out.print(" ");
             }
-            for(j=0;j<(n/2)-3;j++){
-                System.out.print(" ");
-            }
+          
             for(j=0;j<n+2;j++){
                 if(i==0||j==0||j==n+1){
                     System.out.print("*");
@@ -85,5 +83,19 @@ class Main{
             }
             System.out.println();
         }
+    }
+}
+
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter N : ");
+
+        int n = sc.nextInt();
+
+        Pattern p = new Pattern();
+
+        p.pattern(n);
     }
 }
