@@ -32,9 +32,9 @@ e        e
 e        e
 e        e       
     N+3
-
-
 */
+
+
 #include<stdio.h>
 void pattern(int n) {
     // uppar part
